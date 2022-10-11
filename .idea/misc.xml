@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/officeproject/LumpNew/app/src/main/res/layout/activity_base.xml" value="0.1" />
+        <entry key="..\:/officeproject/LumpNew/app/src/main/res/layout/activity_chat.xml" value="0.1" />
+        <entry key="..\:/officeproject/LumpNew/app/src/main/res/layout/activity_editprofileactivity.xml" value="0.1" />
+        <entry key="..\:/officeproject/LumpNew/app/src/main/res/layout/activity_frienddetail.xml" value="0.1" />
+        <entry key="..\:/officeproject/LumpNew/app/src/main/res/layout/activity_phone_otp.xml" value="0.1" />
+        <entry key="..\:/officeproject/LumpNew/app/src/main/res/layout/activity_splash.xml" value="0.20043859649122808" />
+        <entry key="..\:/officeproject/LumpNew/app/src/main/res/layout/fragment_onechat.xml" value="0.19166666666666668" />
+        <entry key="..\:/officeproject/LumpNew/app/src/main/res/layout/tinder_swipe_in_msg_view.xml" value="0.20043859649122808" />
+        <entry key="..\:/officeproject/LumpNew/app/src/main/res/layout/tinder_swipe_out_msg_view.xml" value="0.20043859649122808" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/onliecard"
+        android:layout_width="@dimen/_140sdp"
+        android:layout_height="@dimen/_220sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        android:background="@color/white"
+        app:cardElevation="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/userfriendpic"
+               android:layout_width="@dimen/_140sdp"
+               android:layout_height="@dimen/_150sdp"
+               android:scaleType="centerCrop"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <TextView
+            android:id="@+id/userfriendname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seema Rani"
+            android:layout_marginEnd="@dimen/_4sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            android:padding="@dimen/_2sdp"
+            android:backgroundTint="@color/white"
+            android:drawableEnd="@drawable/online"
+            android:layout_marginStart="@dimen/_5sdp"
+            app:layout_constraintTop_toBottomOf="@id/userfriendpic"
+            app:layout_constraintStart_toStartOf="parent"/>
+            <TextView
+                android:id="@+id/userfriendlocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/emoji_gray70"
+                android:textSize="@dimen/_8sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:backgroundTint="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/userfriendname"
+                app:layout_constraintStart_toStartOf="@id/userfriendname"/>
+            <ImageView
+                android:id="@+id/chaticon"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_14sdp"
+                android:src="@drawable/ic_baseline_insert_comment_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/userfriendlocation"
+                app:layout_constraintBottom_toBottomOf="@id/userfriendlocation"
+              app:layout_constraintTop_toTopOf="@id/userfriendlocation"/>
+            <ImageView
+                android:id="@+id/fanicon"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/ic_group_1"
+                android:layout_marginBottom="@dimen/_20sdp"
+                app:layout_constraintTop_toTopOf="@id/chaticon"
+                android:layout_marginEnd="@dimen/_10sdp"
+               app:layout_constraintEnd_toEndOf="parent"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/fanicon"
+                android:textSize="@dimen/_5sdp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+       </androidx.cardview.widget.CardView>
+
+</ScrollView>

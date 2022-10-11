@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_welcome"
+    tools:context=".activity.PhoneOtpActivity">
+    <ImageView
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:id="@+id/back"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:src="@drawable/arrow">
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:textSize="@dimen/_30sdp"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:fontFamily="@font/medium"
+        android:textColor="#fff"
+        android:id="@+id/welcome"
+        android:layout_marginTop="@dimen/_80sdp"/>
+    <EditText
+        android:id="@+id/mobile_number"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:inputType="number"
+        android:maxLength="10"
+        android:background="@drawable/purple_button"
+        android:gravity="center_horizontal"
+        android:paddingTop="@dimen/_10sdp"
+        android:textColor="@color/white"
+        android:textColorHint="#fff"
+        android:hint="Enter your phone number"
+        android:fontFamily="@font/roman"
+        android:layout_marginTop="@dimen/_100sdp"
+        android:textAlignment="center"
+        android:textSize="@dimen/_12sdp"
+        android:layout_below="@id/welcome"/>
+    <Button
+        android:id="@+id/sendotp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+
+        android:background="@drawable/purple_button"
+        android:gravity="center_horizontal"
+        android:paddingTop="@dimen/_10sdp"
+        android:textColor="@color/white"
+        android:textColorHint="#fff"
+      android:text="Send otp"
+        android:textAllCaps="false"
+        android:visibility="visible"
+        android:fontFamily="@font/roman"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:textAlignment="center"
+        android:textSize="@dimen/_12sdp"
+        android:layout_below="@id/mobile_number"/>
+
+<!--    <Button-->
+<!--        android:id="@+id/otp_send"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="@dimen/_40sdp"-->
+<!--        android:layout_marginLeft="@dimen/_20sdp"-->
+<!--        android:layout_marginRight="@dimen/_20sdp"-->
+<!--        android:background="@drawable/strip"-->
+<!--        android:fontFamily="@font/medium"-->
+<!--        android:gravity="center_horizontal"-->
+<!--        android:paddingTop="@dimen/_10sdp"-->
+<!--        android:text="Send Otp"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:layout_marginTop="@dimen/_15sdp"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="#fff"-->
+<!--        android:textSize="@dimen/_12sdp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:layout_below="@id/otp_et" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/next"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="@dimen/_40sdp"-->
+<!--        android:layout_marginLeft="@dimen/_20sdp"-->
+<!--        android:layout_marginRight="@dimen/_20sdp"-->
+<!--        android:background="@drawable/strip"-->
+<!--        android:fontFamily="@font/medium"-->
+<!--        android:gravity="center_horizontal"-->
+<!--        android:paddingTop="@dimen/_10sdp"-->
+<!--        android:text="Next"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:visibility="visible"-->
+<!--        android:layout_marginTop="@dimen/_15sdp"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="#fff"-->
+<!--        android:textSize="@dimen/_12sdp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:layout_below="@id/otp_et" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/otp_tv3"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:paddingTop="@dimen/_2sdp"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:layout_marginLeft="@dimen/_5sdp"-->
+<!--        android:fontFamily="@font/roman"-->
+<!--        android:visibility="gone"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:text="your otp is:"-->
+<!--        android:textSize="@dimen/_12sdp"-->
+<!--        android:layout_below="@id/next"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/otp"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:paddingTop="@dimen/_2sdp"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:layout_marginLeft="@dimen/_5sdp"-->
+<!--        android:fontFamily="@font/roman"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:text=""-->
+<!--        android:layout_toRightOf="@id/otp_tv3"-->
+<!--        android:textSize="@dimen/_12sdp"-->
+<!--        android:layout_below="@id/next"/>-->
+
+<!--    <FrameLayout-->
+<!--        android:id="@+id/mloaderLayout"-->
+<!--        android:layout_width="@dimen/_50sdp"-->
+<!--        android:layout_height="@dimen/_50sdp"-->
+<!--        android:layout_marginTop="@dimen/_60sdp"-->
+<!--       android:layout_marginHorizontal="@dimen/_130sdp"-->
+<!--        android:background="@drawable/bg_white_round"-->
+<!--       android:layout_below="@id/otp"-->
+<!--        android:visibility="gone">-->
+
+<!--        <com.wang.avi.AVLoadingIndicatorView-->
+<!--            android:layout_centerInParent="true"-->
+<!--            app:indicatorName="BallSpinFadeLoaderIndicator"-->
+<!--            app:indicatorColor="@color/purple_200"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_width="@dimen/_35sdp"-->
+<!--            android:layout_height="@dimen/_35sdp" />-->
+
+<!--    </FrameLayout>-->
+<!--</RelativeLayout>-->
+</RelativeLayout>

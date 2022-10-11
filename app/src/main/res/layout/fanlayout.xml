@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fancard"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_220sdp"
+        app:cardCornerRadius="@dimen/_4sdp"
+        app:cardElevation="@dimen/_2sdp"
+        android:background="@color/white"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/userfriendpic1"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_150sdp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_woman"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+            <TextView
+                android:id="@+id/userfriendname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Seema Rani"
+                android:layout_marginEnd="@dimen/_4sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+                android:padding="@dimen/_2sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                app:layout_constraintTop_toBottomOf="@id/userfriendpic1"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/userfriendlocation"
+                android:layout_width="13dp"
+                android:layout_height="7dp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:text="67"
+                android:textColor="@color/emoji_gray70"
+                android:textSize="@dimen/_8sdp"
+                app:layout_constraintStart_toStartOf="@id/userfriendname"
+                app:layout_constraintTop_toBottomOf="@id/userfriendname" />
+            <TextView
+                android:id="@+id/txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_4sdp"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@id/userfriendlocation"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <FrameLayout
+            android:id="@+id/mloaderLayout"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@drawable/bg_white_round"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            android:visibility="gone">
+
+            <com.wang.avi.AVLoadingIndicatorView
+                android:layout_centerInParent="true"
+                app:indicatorName="BallSpinFadeLoaderIndicator"
+                app:indicatorColor="@color/purple_200"
+                android:layout_gravity="center"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp" />
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</ScrollView>

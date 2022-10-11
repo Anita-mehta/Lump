@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+    tools:context=".activity.Editprofileactivity"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/backedit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@color/appcolor"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/backimge"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_baseline_keyboard_arrow_left_24"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="50dp"
+            android:layout_weight="1.5"
+            android:layout_marginStart="-15dp"
+            android:gravity="center_vertical"
+            android:text="Edit Profile"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:padding="@dimen/_7sdp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/update"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:text="Save"
+            android:backgroundTint="@color/appcolor"
+            android:textColor="@color/white"
+            android:textStyle="normal"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_14sdp" />
+
+
+
+    </LinearLayout>
+       <com.google.android.gms.ads.AdView
+           android:id="@+id/ads"
+           ads:adSize="BANNER"
+           android:layout_marginTop="@dimen/_5sdp"
+           android:layout_marginBottom="@dimen/_5sdp"
+           android:layout_marginStart="@dimen/_5sdp"
+           android:layout_marginEnd="@dimen/_5sdp"
+           ads:adUnitId="@string/ad_unit_id"
+           android:layout_width="match_parent"
+           android:background="@null"
+           android:layout_height="@dimen/_50sdp">
+
+       </com.google.android.gms.ads.AdView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="@dimen/_10sdp"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/utxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username"
+
+            android:padding="@dimen/_3sdp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/editpicname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/username"
+            android:layout_below="@id/utxt"
+            android:background="@null"
+            android:textColorHint="#9C9999"
+            android:textSize="@dimen/_12sdp"
+            android:padding="@dimen/_3sdp"
+            android:textColor="@color/black" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_below="@+id/become_privildge_layout"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EAE7E7"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="@dimen/_10sdp"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/atxt"
+            android:layout_width="@dimen/_280sdp"
+            android:layout_height="wrap_content"
+            android:text="Age"
+            android:padding="@dimen/_3sdp"
+            android:textColor="@color/black"/>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/simpleSwitch"
+            android:layout_width="42dp"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/atxt"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="6dp"
+            android:checked="true"
+            android:gravity="right"
+            android:thumb="@drawable/custom_thumb"
+            app:trackTint="#A19999" />
+
+        <EditText
+            android:id="@+id/editage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Age"
+            android:padding="@dimen/_5sdp"
+            android:layout_below="@+id/atxt"
+            android:background="@null"
+            android:textColorHint="#9C9999"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/black" />
+
+    </RelativeLayout>
+        <View
+            android:layout_below="@+id/become_privildge_layout"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#F6F1F1"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="@dimen/_10sdp"
+            android:background="@color/white"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/gtxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:padding="@dimen/_3sdp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/editgender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="gender"
+                android:padding="@dimen/_5sdp"
+                android:layout_below="@+id/gtxt"
+                android:background="@null"
+                android:textColorHint="#9C9999"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+        <FrameLayout
+            android:id="@+id/mloaderLayout"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@drawable/bg_white_round"
+            android:layout_gravity="center"
+            android:visibility="gone">
+
+            <com.wang.avi.AVLoadingIndicatorView
+                app:indicatorName="BallSpinFadeLoaderIndicator"
+                app:indicatorColor="@color/purple_200"
+                android:layout_gravity="center"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp" />
+        </FrameLayout>
+    <View
+        android:layout_below="@+id/become_privildge_layout"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F6F1F1"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="@dimen/_10sdp"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/abotxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About"
+            android:padding="@dimen/_3sdp"
+            android:textColor="@color/black"/>
+        <EditText
+            android:id="@+id/about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_below="@id/abotxt"
+            android:textColorHint="#BDB6B6"
+            android:hint="About"
+            android:padding="@dimen/_5sdp"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/black"/>
+
+    </RelativeLayout>
+        <View
+            android:layout_below="@+id/become_privildge_layout"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#F6F1F1"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="@dimen/_10sdp"
+            android:background="@color/white"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/intertxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Interested_in"
+                android:padding="@dimen/_3sdp"
+                android:textColor="@color/black"/>
+            <EditText
+                android:id="@+id/editinterest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_below="@id/intertxt"
+                android:textColorHint="#BDB6B6"
+                android:hint="interested_in"
+                android:padding="@dimen/_5sdp"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/black"/>
+
+        </RelativeLayout>
+
+    <View
+        android:layout_below="@+id/become_privildge_layout"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F6F1F1"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="@dimen/_10sdp"
+            android:background="@color/white"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/loctxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Country"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/black"/>
+            <EditText
+                android:id="@+id/editlocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_below="@id/loctxt"
+                android:textColorHint="#BDB6B6"
+                android:hint="country"
+                android:padding="@dimen/_3sdp"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/black"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

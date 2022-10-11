@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Lump</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="username">Username</string>
+    <string name="uname">bhanguz</string>
+    <string name="token">012d%lump%4071</string>
+    <string name="fb_login_protocol_scheme">fb202587361475589</string>
+    <string name="facebook_app_id">202587361475589</string>
+    <string name="url_base">http://103.43.153.37:8060/apis/</string>
+    <string name="img_url">http://103.43.153.37:8060/img/</string>
+
+    <!--    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>-->
+    <string name="k">kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk</string>
+    <!--original-->
+    <!--    <string name="ad_unit_id">ca-app-pub-1947742261736296/6974063735</string>
+        <string name="admob_app_id">ca-app-pub-1947742261736296~7065563073</string>-->
+
+    <!--Dummy-->
+    <string name="ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>
+</resources>

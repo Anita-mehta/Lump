@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "686427478961",
+    "firebase_url": "https://lumpnew.firebaseio.com",
+    "project_id": "lumpnew",
+    "storage_bucket": "lumpnew.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:686427478961:android:817f891d6983686d7ebb90",
+        "android_client_info": {
+          "package_name": "com.bhanguz.lump"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "686427478961-3474dvf711uravlea6amm38c3e7h4a03.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bhanguz.lump",
+            "certificate_hash": "a9dfbdfbd83c3997153e233ee4811a856d79852e"
+          }
+        },
+        {
+          "client_id": "686427478961-gavpl8kh5hgfqd5j6loi4h35gt1djk2t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bhanguz.lump",
+            "certificate_hash": "0159d33c5071cc0e66417b74a7617596ebe210de"
+          }
+        },
+        {
+          "client_id": "686427478961-vle6ivsev46c3viubjqmj0d8ds1ke4sp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxp8prPYReY_UaMYMHOAmHXGGzEfqBeJM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "686427478961-vle6ivsev46c3viubjqmj0d8ds1ke4sp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
